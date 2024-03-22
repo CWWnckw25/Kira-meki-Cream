@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+//px to rem
+@function rm($px) {
+    @return calc($px / 16) * 1rem;
+}
+
+// SP用のvw関数
+@function vw($px) {
+    @return calc($px * 100vw / 390); // 例: カンプ幅 390pxの場合 100vw/390
+}
+
+//ブレイクポイント
+$breakpoints: (
+    "md": "screen and (min-width: 768px)",
+    "lg": "screen and (min-width: 940px)",
+    "xl": "screen and (min-width: 1200px)",
+    ) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+body {
+    font-family: "Marcellus",
+        "EB Garamond",
+        "Noto Serif JP",
+        serif;
+}
+
+.header {
+    background-image: url('/../images/mainvisual_sp.jpg'
+    );
+max-width: 100%;
+height: 115.3vw;
+background-size: cover;
+margin: 0 auto;
+background-position: center;
+
+@include mq(md) {
+    background-image: url('/../images/mainvisual_pc.jpg');
+    height: 720px;
+}
+
+&__logo {
+    font-size: vw(24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: vw(24);
+    font-weight: normal;
+    letter-spacing: 1.2vw;
+
+    @include mq(md) {
+        font-size: rm(28);
+        padding-top: 32px;
+        letter-spacing: 0.374vw;
+    }
+}
+
+&__catch {
+    margin-left: vw(23);
+    transform: translateY(261%);
+
+    @include mq(md) {
+        width: 364px;
+        margin-left: 14.86vw;
+        transform: translateY(119%);
+    }
+}
+
+&__catch--cream {
+    font-size: vw(41);
+    font-weight: normal;
+    letter-spacing: 3.2vw;
+    margin-bottom: vw(8);
+
+    @include mq(md) {
+        font-size: rm(50);
+        letter-spacing: 15px;
+        margin-bottom: 10px;
+        line-height: 4.01rem;
+    }
+}
+
+&__catch--under {
+    font-size: vw(20);
+    letter-spacing: 1.5vw;
+
+    @include mq(md) {
+        font-size: rm(25);
+        letter-spacing: 0.5vw;
+        white-space: nowrap;
+    }
+}
+}
+
+.price {
+    padding: 0 vw(16);
+
+    @include mq(md) {
+        padding: 48px 10px;
+        height: 242px;
+        margin: 0 auto;
+    }
+
+    &__container {
+        margin-top: vw(157);
+        height: vw(261);
+        background-color: #F0F4FF;
+        text-align: center;
+        padding: 0 vw(29);
+        margin-bottom: vw(50);
+
+        @include mq(md) {
+            margin: 0 auto;
+            max-width: 1000px;
+            height: 146px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: rm(64);
+        }
+    }
+
+    &__container--item {
+        max-width: vw(300);
+        margin: 0 auto;
+
+        @include mq(md) {
+            max-width: 208px;
+            height: 66px;
+            margin: 0;
+        }
+    }
+
+    &__container--item--title {
+        font-size: vw(18);
+        font-weight: 600;
+        padding-top: vw(20);
+        letter-spacing: 0.44vw;
+        margin-bottom: vw(5);
+
+        @include mq(md) {
+            font-size: rm(23);
+            padding-top: 0;
+            letter-spacing: 0.24vw;
+            margin-bottom: 0;
+            white-space: nowrap;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__container--item--tax {
+        font-size: vw(14);
+        font-family: "Noto Sans JP", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: vw(2);
+        letter-spacing: 0.34vw;
+        margin-bottom: vw(20);
+
+        @include mq(md) {
+            font-size: rm(16);
+            gap: rm(2);
+            letter-spacing: 2px;
+            margin-bottom: 0;
+            justify-content: flex-start;
+        }
+
+    }
+
+    &__container--button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(md) {
+            flex-direction: row;
+            gap: rm(32);
+        }
+    }
+
+    &__container a {
+        text-decoration: none;
+        color: #fff;
+    }
+    @include mq(md) {
+        &__container--button--item{
+        max-width: vw(300);
+    }
+}
+
+    &__container--link {
+        width: vw(300);
+        height: vw(58);
+        background-color: #46C4DB;
+        border-radius: 50px;
+        font-size: vw(18);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: vw(20);
+
+        @include mq(md) {
+            width: 20vw;
+            height: rm(58);
+            border-radius: 50px;
+            font-size: 1.2vw;
+            margin-bottom: 0;
+            white-space: nowrap;
+        }
+    }
+    &__container--link--green {
+        background-color: #5DD5AB;
+    }
+}
+
+.keep {
+    background-image: url(/../images/keep_sp.jpg);
+    max-width: 100%;
+    height: vw(680);
+    background-size: cover;
+
+    @include mq(md) {
+        background-image: url(/../images/keep_pc.jpg);
+        height: 36.6vw;
+        object-fit: cover;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__container {
+        padding: 0 vw(16);
+        text-align: center;
+        color: #fff;
+        @include mq(md) {
+            padding:8.46vw 1.06vw;
+            width: rm(467);
+            text-align: left;
+            margin-right: 14.7%;
+        }
+    }
+
+    &__container--title {
+        font-size: vw(30);
+        font-weight: bold;
+        font-family: "EB Garamond";
+        padding-top: vw(48);
+        margin-bottom: vw(8);
+
+        @include mq(md) {
+            font-size: 2.53vw;
+            padding-top: 0;
+            margin-bottom: rm(9);
+        }
+    }
+
+    &__container--skin {
+        font-size: vw(24);
+        font-weight: 600;
+        font-family: serif;
+        margin-bottom: 3.6vw;
+
+        @include mq(md) {
+            font-size: 1.6vw;
+            margin-bottom: rm(16);
+        }
+    }
+
+    &__container--text {
+        width: vw(358);
+        font-size: vw(14);
+        font-family: serif;
+        line-height: rm(32);
+        text-align: left;
+
+        @include mq(md) {
+            width: rm(429);
+            font-size: 0.93vw;
+            letter-spacing: 0.005vw;
+        }
+    }
+}
+.voices{
+    padding: vw(50) vw(16);
+
+    &__container{
+        max-width: vw(358);
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__container--item{
+        max-width: vw(85);
+    }
+    &__container--title{
+        margin-bottom: vw(4);
+        font-family: "EB Garamond";
+        font-weight: bold;
+        font-size: VW(30);
+    }
+    &__container--text{
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: vw(16);
+        font-weight: 600;
+    }
+    &__container--slider{
+        max-width: vw(358);
+    }
+    &__container--slider--content{
+        max-width: vw(358);
+    }
+    &__container--slider--item {
+        width: vw(280);
+        height: vw(344);
+        background-color: #DBF7F9;
+    }
+}

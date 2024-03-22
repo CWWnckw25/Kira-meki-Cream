@@ -1,0 +1,297 @@
+body {
+  font-family: "Marcellus", "EB Garamond", "Noto Serif JP", serif;
+}
+
+.header {
+  background-image: url("/../images/mainvisual_sp.jpg");
+  max-width: 100%;
+  height: 115.3vw;
+  background-size: cover;
+  margin: 0 auto;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url("/../images/mainvisual_pc.jpg");
+    height: 720px;
+  }
+}
+.header__logo {
+  font-size: 6.1538461538vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6.1538461538vw;
+  font-weight: normal;
+  letter-spacing: 1.2vw;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    font-size: 1.75rem;
+    padding-top: 32px;
+    letter-spacing: 0.374vw;
+  }
+}
+.header__catch {
+  margin-left: 5.8974358974vw;
+  transform: translateY(261%);
+}
+@media screen and (min-width: 768px) {
+  .header__catch {
+    width: 364px;
+    margin-left: 14.86vw;
+    transform: translateY(119%);
+  }
+}
+.header__catch--cream {
+  font-size: 10.5128205128vw;
+  font-weight: normal;
+  letter-spacing: 3.2vw;
+  margin-bottom: 2.0512820513vw;
+}
+@media screen and (min-width: 768px) {
+  .header__catch--cream {
+    font-size: 3.125rem;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+    line-height: 4.01rem;
+  }
+}
+.header__catch--under {
+  font-size: 5.1282051282vw;
+  letter-spacing: 1.5vw;
+}
+@media screen and (min-width: 768px) {
+  .header__catch--under {
+    font-size: 1.5625rem;
+    letter-spacing: 0.5vw;
+    white-space: nowrap;
+  }
+}
+
+.price {
+  padding: 0 4.1025641026vw;
+}
+@media screen and (min-width: 768px) {
+  .price {
+    padding: 48px 10px;
+    height: 242px;
+    margin: 0 auto;
+  }
+}
+.price__container {
+  margin-top: 40.2564102564vw;
+  height: 66.9230769231vw;
+  background-color: #F0F4FF;
+  text-align: center;
+  padding: 0 7.4358974359vw;
+  margin-bottom: 12.8205128205vw;
+}
+@media screen and (min-width: 768px) {
+  .price__container {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 146px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+.price__container--item {
+  max-width: 76.9230769231vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .price__container--item {
+    max-width: 208px;
+    height: 66px;
+    margin: 0;
+  }
+}
+.price__container--item--title {
+  font-size: 4.6153846154vw;
+  font-weight: 600;
+  padding-top: 5.1282051282vw;
+  letter-spacing: 0.44vw;
+  margin-bottom: 1.2820512821vw;
+}
+@media screen and (min-width: 768px) {
+  .price__container--item--title {
+    font-size: 1.4375rem;
+    padding-top: 0;
+    letter-spacing: 0.24vw;
+    margin-bottom: 0;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+}
+.price__container--item--tax {
+  font-size: 3.5897435897vw;
+  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5128205128vw;
+  letter-spacing: 0.34vw;
+  margin-bottom: 5.1282051282vw;
+}
+@media screen and (min-width: 768px) {
+  .price__container--item--tax {
+    font-size: 1rem;
+    gap: 0.125rem;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+}
+.price__container--button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .price__container--button {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+.price__container a {
+  text-decoration: none;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .price__container--button--item {
+    max-width: 76.9230769231vw;
+  }
+}
+.price__container--link {
+  width: 76.9230769231vw;
+  height: 14.8717948718vw;
+  background-color: #46C4DB;
+  border-radius: 50px;
+  font-size: 4.6153846154vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5.1282051282vw;
+}
+@media screen and (min-width: 768px) {
+  .price__container--link {
+    width: 20vw;
+    height: 3.625rem;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+}
+.price__container--link--green {
+  background-color: #5DD5AB;
+}
+
+.keep {
+  background-image: url(/../images/keep_sp.jpg);
+  max-width: 100%;
+  height: 174.358974359vw;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .keep {
+    background-image: url(/../images/keep_pc.jpg);
+    height: 36.6vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.keep__container {
+  padding: 0 4.1025641026vw;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .keep__container {
+    padding: 8.46vw 1.06vw;
+    width: 29.1875rem;
+    text-align: left;
+    margin-right: 14.7%;
+  }
+}
+.keep__container--title {
+  font-size: 7.6923076923vw;
+  font-weight: bold;
+  font-family: "EB Garamond";
+  padding-top: 12.3076923077vw;
+  margin-bottom: 2.0512820513vw;
+}
+@media screen and (min-width: 768px) {
+  .keep__container--title {
+    font-size: 2.53vw;
+    padding-top: 0;
+    margin-bottom: 0.5625rem;
+  }
+}
+.keep__container--skin {
+  font-size: 6.1538461538vw;
+  font-weight: 600;
+  font-family: serif;
+  margin-bottom: 3.6vw;
+}
+@media screen and (min-width: 768px) {
+  .keep__container--skin {
+    font-size: 1.6vw;
+    margin-bottom: 1rem;
+  }
+}
+.keep__container--text {
+  width: 91.7948717949vw;
+  font-size: 3.5897435897vw;
+  font-family: serif;
+  line-height: 2rem;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .keep__container--text {
+    width: 26.8125rem;
+    font-size: 0.93vw;
+    letter-spacing: 0.005vw;
+  }
+}
+
+.voices {
+  padding: 12.8205128205vw 4.1025641026vw;
+}
+.voices__container {
+  max-width: 91.7948717949vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.voices__container--item {
+  max-width: 21.7948717949vw;
+}
+.voices__container--title {
+  margin-bottom: 1.0256410256vw;
+  font-family: "EB Garamond";
+  font-weight: bold;
+  font-size: VW(30);
+}
+.voices__container--text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 4.1025641026vw;
+  font-weight: 600;
+}
+.voices__container--slider {
+  max-width: 91.7948717949vw;
+}
+.voices__container--slider--content {
+  max-width: 91.7948717949vw;
+}
+.voices__container--slider--item {
+  width: 71.7948717949vw;
+  height: 88.2051282051vw;
+  background-color: #DBF7F9;
+}/*# sourceMappingURL=main.css.map */
