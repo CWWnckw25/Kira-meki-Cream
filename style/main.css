@@ -263,16 +263,31 @@ body {
 }
 
 .voice {
-  padding: 12.8205128205vw 4.1025641026vw;
+  padding: 12.8205128205vw 4.1025641026vw 10.7692307692vw 4.1025641026vw;
+}
+@media screen and (min-width: 768px) {
+  .voice {
+    padding: 80px 150px;
+  }
 }
 .voice__container {
   max-width: 91.7948717949vw;
   margin: 0 auto;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .voice__container {
+    max-width: 100%;
+  }
+}
 .voice__container--item {
   max-width: 21.7948717949vw;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .voice__container--item {
+    max-width: 100%;
+  }
 }
 .voice__container--title {
   margin-bottom: 1.0256410256vw;
@@ -281,6 +296,13 @@ body {
   font-size: 7.6923076923vw;
   letter-spacing: 0.4vw;
 }
+@media screen and (min-width: 768px) {
+  .voice__container--title {
+    margin-bottom: 0.5rem;
+    font-size: 2.8125rem;
+    letter-spacing: 0.13rem;
+  }
+}
 .voice__container--text {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 4.1025641026vw;
@@ -288,14 +310,123 @@ body {
   margin-bottom: 9.2307692308vw;
   letter-spacing: 0.19vw;
 }
+@media screen and (min-width: 768px) {
+  .voice__container--text {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.06vw;
+  }
+}
 .voice__container--slider {
   max-width: 91.7948717949vw;
 }
-.voice__container--slider--content {
+@media screen and (min-width: 768px) {
+  .voice__container--slider {
+    max-width: 100%;
+  }
+}
+.voice .slick-track {
+  display: flex;
+  justify-content: center;
+  gap: 4.1025641026vw;
+}
+@media screen and (min-width: 768px) {
+  .voice .slick-track {
+    gap: 0.7%;
+  }
+}
+.voice .slick-dotted.slick-slider {
+  margin-top: 4.1025641026vw;
+}
+@media screen and (min-width: 768px) {
+  .voice .slick-dotted.slick-slider {
+    max-width: 66.7vw;
+    margin: 0 auto;
+  }
+}
+.voice .slick-slide {
+  height: 88.2051282051vw;
+}
+@media screen and (min-width: 768px) {
+  .voice .slick-slide {
+    height: 25.86vw;
+  }
+}
+.voice .slick-next, .voice .slick-prev {
+  background-color: #00AFBF;
+  width: 8.2051282051vw;
+  height: 8.2051282051vw;
+  border-radius: 50%;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .voice .slick-next, .voice .slick-prev {
+    background-color: #00AFBF;
+    width: 48px;
+    height: 48px;
+  }
+}
+.voice .slick-prev {
+  left: 1px;
+}
+@media screen and (min-width: 768px) {
+  .voice .slick-prev {
+    left: -80px;
+  }
+}
+.voice .slick-next {
+  right: 1px;
+}
+@media screen and (min-width: 768px) {
+  .voice .slick-next {
+    right: -80px;
+  }
+}
+.voice .slick-next::before, .voice .slick-prev::before {
+  font-family: "sans-serif";
+  opacity: 1;
+  font-weight: bold;
+}
+.voice .slick-dots {
+  bottom: -25px;
+}
+@media screen and (min-width: 768px) {
+  .voice .slick-dots {
+    bottom: -33px;
+  }
+}
+.voice .slick-dots li {
+  margin: 0 9px;
+  width: 3px;
+  height: 3px;
+}
+@media screen and (min-width: 768px) {
+  .voice .slick-dots li {
+    margin: 0 5px;
+    width: 12px;
+    height: 5px;
+  }
+}
+.voice .slick-dots li button:before {
+  color: #00AFBF;
+  font-size: 10px;
+}
+.voice .slick-dots li.slick-active button:before {
+  color: #00AFBF;
+  font-size: 10px;
+}
+.voice__container--slider--item {
   max-width: 71.7948717949vw;
   height: 88.2051282051vw;
   margin: 0 auto;
   background-color: #DBF7F9;
+}
+@media screen and (min-width: 768px) {
+  .voice__container--slider--item {
+    max-width: 20vw;
+    height: 25.86vw;
+    margin: 0;
+  }
 }
 .voice__container--slider--item--img {
   margin: 0 auto;
@@ -303,9 +434,22 @@ body {
   margin-bottom: 2.0512820513vw;
   width: 20.5128205128vw;
 }
+@media screen and (min-width: 768px) {
+  .voice__container--slider--item--img {
+    margin-top: 2.66vw;
+    margin-bottom: 0.5vw;
+    width: 35%;
+  }
+}
 .voice__container--slider--item--name {
   font-size: 3.5897435897vw;
   margin-bottom: 4.7vw;
+}
+@media screen and (min-width: 768px) {
+  .voice__container--slider--item--name {
+    font-size: 1vw;
+    margin-bottom: 0.8vw;
+  }
 }
 .voice__container--slider--item--text {
   font-size: 3.5897435897vw;
@@ -313,4 +457,11 @@ body {
   width: 64.1025641026vw;
   margin: 0 auto;
   line-height: 1.72rem;
+}
+@media screen and (min-width: 768px) {
+  .voice__container--slider--item--text {
+    font-size: 1.06vw;
+    width: 17.8vw;
+    line-height: 1.86vw;
+  }
 }/*# sourceMappingURL=main.css.map */
