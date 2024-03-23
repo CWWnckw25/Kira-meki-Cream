@@ -262,36 +262,55 @@ body {
   }
 }
 
-.voices {
+.voice {
   padding: 12.8205128205vw 4.1025641026vw;
 }
-.voices__container {
+.voice__container {
   max-width: 91.7948717949vw;
   margin: 0 auto;
   text-align: center;
 }
-.voices__container--item {
+.voice__container--item {
   max-width: 21.7948717949vw;
+  margin: 0 auto;
 }
-.voices__container--title {
+.voice__container--title {
   margin-bottom: 1.0256410256vw;
   font-family: "EB Garamond";
   font-weight: bold;
-  font-size: VW(30);
+  font-size: 7.6923076923vw;
+  letter-spacing: 0.4vw;
 }
-.voices__container--text {
+.voice__container--text {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 4.1025641026vw;
   font-weight: 600;
+  margin-bottom: 9.2307692308vw;
+  letter-spacing: 0.19vw;
 }
-.voices__container--slider {
+.voice__container--slider {
   max-width: 91.7948717949vw;
 }
-.voices__container--slider--content {
-  max-width: 91.7948717949vw;
-}
-.voices__container--slider--item {
-  width: 71.7948717949vw;
+.voice__container--slider--content {
+  max-width: 71.7948717949vw;
   height: 88.2051282051vw;
+  margin: 0 auto;
   background-color: #DBF7F9;
+}
+.voice__container--slider--item--img {
+  margin: 0 auto;
+  margin-top: 7.1794871795vw;
+  margin-bottom: 2.0512820513vw;
+  width: 20.5128205128vw;
+}
+.voice__container--slider--item--name {
+  font-size: 3.5897435897vw;
+  margin-bottom: 4.7vw;
+}
+.voice__container--slider--item--text {
+  font-size: 3.5897435897vw;
+  text-align: left;
+  width: 64.1025641026vw;
+  margin: 0 auto;
+  line-height: 1.72rem;
 }/*# sourceMappingURL=main.css.map */

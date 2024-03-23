@@ -287,7 +287,7 @@ background-position: center;
         }
     }
 }
-.voices{
+.voice{
     padding: vw(50) vw(16);
 
     &__container{
@@ -297,27 +297,46 @@ background-position: center;
     }
     &__container--item{
         max-width: vw(85);
+        margin: 0 auto;
     }
     &__container--title{
         margin-bottom: vw(4);
         font-family: "EB Garamond";
         font-weight: bold;
-        font-size: VW(30);
+        font-size: vw(30);
+        letter-spacing: 0.4vw;
     }
     &__container--text{
         font-family: "Noto Sans JP", sans-serif;
         font-size: vw(16);
         font-weight: 600;
+        margin-bottom: vw(36);
+        letter-spacing: 0.19vw;
     }
     &__container--slider{
         max-width: vw(358);
     }
     &__container--slider--content{
-        max-width: vw(358);
-    }
-    &__container--slider--item {
-        width: vw(280);
+        max-width: vw(280);
         height: vw(344);
+        margin: 0 auto;
         background-color: #DBF7F9;
+    }
+    &__container--slider--item--img{
+        margin: 0 auto;
+        margin-top: vw(28);
+        margin-bottom: vw(8);
+        width: vw(80);
+    }
+    &__container--slider--item--name{
+        font-size: vw(14);
+        margin-bottom: 4.7vw;
+    }
+    &__container--slider--item--text{
+        font-size: vw(14);
+        text-align: left;
+        width: vw(250);
+        margin: 0 auto;
+        line-height: 1.72rem;
     }
 }
