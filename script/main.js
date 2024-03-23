@@ -23,3 +23,12 @@ $(window).on('load resize', function(){
             slidesToShow: 1
     });
 }});
+
+// アコーディオンのタイトルがクリックされたら
+$('.accordion-title').on('click', function(e) {
+
+    // .accordion-contentを選択
+    var content = $(this).next();
+    // .accordion-contentを表示・非表示
+    content.slideToggle();
+    });

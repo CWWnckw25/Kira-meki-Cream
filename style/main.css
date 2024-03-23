@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Marcellus", "EB Garamond", "Noto Serif JP", serif;
 }
@@ -352,7 +353,8 @@ body {
     height: 25.86vw;
   }
 }
-.voice .slick-next, .voice .slick-prev {
+.voice .slick-next,
+.voice .slick-prev {
   background-color: #00AFBF;
   width: 8.2051282051vw;
   height: 8.2051282051vw;
@@ -360,7 +362,8 @@ body {
   z-index: 100;
 }
 @media screen and (min-width: 768px) {
-  .voice .slick-next, .voice .slick-prev {
+  .voice .slick-next,
+  .voice .slick-prev {
     background-color: #00AFBF;
     width: 48px;
     height: 48px;
@@ -382,7 +385,8 @@ body {
     right: -80px;
   }
 }
-.voice .slick-next::before, .voice .slick-prev::before {
+.voice .slick-next::before,
+.voice .slick-prev::before {
   font-family: "sans-serif";
   opacity: 1;
   font-weight: bold;
@@ -464,4 +468,61 @@ body {
     width: 17.8vw;
     line-height: 1.86vw;
   }
+}
+
+.question {
+  max-width: 100%;
+  background: linear-gradient(to right, #F4FFE8, #C6F0FE);
+  padding: 8.4615384615vw 4.1025641026vw;
+  text-align: center;
+  /* アコーディオンのコンテンツ部分 */
+  /* 初期状態を表示するとき用のクラス */
+}
+.question__container {
+  max-width: 30vw;
+  margin: 0 auto;
+}
+.question__container--title {
+  max-width: 18.4615384615vw;
+  font-size: 7.6923076923vw;
+  font-family: "EB Garamond";
+  font-weight: bold;
+  margin: 0 auto;
+  letter-spacing: 0.5vw;
+}
+.question__container--text {
+  font-size: 4.1025641026vw;
+  font-weight: 600;
+  margin-bottom: 9.4871794872vw;
+  margin-top: 1.0256410256vw;
+  letter-spacing: 0.18vw;
+}
+.question .accordion {
+  text-align: center;
+}
+.question .accordion li {
+  list-style: none;
+  text-decoration: none;
+}
+.question .accordion-title {
+  padding: 5.1282051282vw 4.1025641026vw;
+  max-width: 91.7948717949vw;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: left;
+  cursor: pointer;
+}
+.question .accordion-item {
+  margin-bottom: 5.1282051282vw;
+}
+.question .accordion-content {
+  display: none;
+  /* 初期状態は非表示 */
+  padding: 4.8717948718vw 4.358974359vw 8.4615384615vw 4.1025641026vw;
+  background-color: #fff;
+  max-width: 91.7948717949vw;
+  margin: -5.1282051282vw auto 5.1282051282vw auto;
+}
+.question .accordion-content-active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
