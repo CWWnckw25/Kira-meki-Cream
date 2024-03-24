@@ -269,6 +269,7 @@ body {
 @media screen and (min-width: 768px) {
   .voice {
     padding: 80px 150px;
+    margin-bottom: 32px;
   }
 }
 .voice__container {
@@ -473,14 +474,24 @@ body {
 .question {
   max-width: 100%;
   background: linear-gradient(to right, #F4FFE8, #C6F0FE);
-  padding: 8.4615384615vw 4.1025641026vw;
+  padding: 8.4615384615vw 4.1025641026vw 3vw 4.1025641026vw;
   text-align: center;
   /* アコーディオンのコンテンツ部分 */
   /* 初期状態を表示するとき用のクラス */
 }
+@media screen and (min-width: 768px) {
+  .question {
+    padding: 2.5rem 0.625rem;
+  }
+}
 .question__container {
   max-width: 30vw;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .question__container {
+    max-width: 37.5rem;
+  }
 }
 .question__container--title {
   max-width: 18.4615384615vw;
@@ -490,12 +501,27 @@ body {
   margin: 0 auto;
   letter-spacing: 0.5vw;
 }
+@media screen and (min-width: 768px) {
+  .question__container--title {
+    font-size: 2.8125rem;
+    max-width: 9.125rem;
+    letter-spacing: 0.006875rem;
+  }
+}
 .question__container--text {
   font-size: 4.1025641026vw;
   font-weight: 600;
   margin-bottom: 9.4871794872vw;
   margin-top: 1.0256410256vw;
   letter-spacing: 0.18vw;
+}
+@media screen and (min-width: 768px) {
+  .question__container--text {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0.65rem;
+    letter-spacing: 0.06rem;
+  }
 }
 .question .accordion {
   text-align: center;
@@ -505,24 +531,101 @@ body {
   text-decoration: none;
 }
 .question .accordion-title {
-  padding: 5.1282051282vw 4.1025641026vw;
+  padding: 5.1282051282vw 4.1025641026vw 4.1025641026vw 4.1025641026vw;
   max-width: 91.7948717949vw;
   background-color: #fff;
   margin: 0 auto;
   text-align: left;
   cursor: pointer;
+  display: flex;
+  gap: 11px;
+}
+@media screen and (min-width: 768px) {
+  .question .accordion-title {
+    padding: 1.5rem 1.5rem 0.9rem 1.5rem;
+    max-width: 37.5rem;
+    gap: 1rem;
+  }
 }
 .question .accordion-item {
   margin-bottom: 5.1282051282vw;
 }
+@media screen and (min-width: 768px) {
+  .question .accordion-item {
+    margin-bottom: 1.69rem;
+  }
+}
 .question .accordion-content {
   display: none;
-  /* 初期状態は非表示 */
-  padding: 4.8717948718vw 4.358974359vw 8.4615384615vw 4.1025641026vw;
+}
+.question .accordion-content-active {
+  display: block;
+  padding: 4.8717948718vw 4.358974359vw 6.8vw 4.1025641026vw;
   background-color: #fff;
   max-width: 91.7948717949vw;
   margin: -5.1282051282vw auto 5.1282051282vw auto;
 }
-.question .accordion-content-active {
-  display: block;
+@media screen and (min-width: 768px) {
+  .question .accordion-content-active {
+    padding: 1.5rem;
+    max-width: 37.5rem;
+    margin: -1.25rem auto 0 auto;
+  }
+}
+.question .accordion-container .accordion-title {
+  position: relative;
+}
+.question .accordion-container .accordion-title::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top-color: #000;
+}
+.question .accordion-container .accordion-title.open::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  border: 8px solid transparent;
+  border-bottom-color: #000;
+}
+.question .accordion-title-text {
+  width: 69.4871794872vw;
+  letter-spacing: -0.26vw;
+  line-height: 1.7em;
+}
+@media screen and (min-width: 768px) {
+  .question .accordion-title-text {
+    width: 30.6875rem;
+    text-align: left;
+    letter-spacing: -0.06rem;
+  }
+}
+.question .accordion-content {
+  display: flex;
+  gap: 3.2vw;
+}
+@media screen and (min-width: 768px) {
+  .question .accordion-content {
+    gap: 1.2rem;
+  }
+}
+.question .accordion-title-text-a {
+  width: 76.1538461538vw;
+}
+@media screen and (min-width: 768px) {
+  .question .accordion-title-text-a {
+    width: 32.375rem;
+  }
+}
+.question .accordion-container:last-child {
+  margin-bottom: 0.1vw;
+}
+@media screen and (min-width: 768px) {
+  .question .accordion-container:last-child {
+    margin-bottom: -1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

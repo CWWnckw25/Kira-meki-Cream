@@ -296,6 +296,7 @@ background-position: center;
 
     @include mq(md) {
         padding: 80px 150px;
+        margin-bottom: 32px;
     }
 
     &__container {
@@ -503,12 +504,20 @@ background-position: center;
 .question {
     max-width: 100%;
     background: linear-gradient(to right, #F4FFE8, #C6F0FE);
-    padding: vw(33) vw(16);
+    padding: vw(33) vw(16) 3vw vw(16);
     text-align: center;
+
+    @include mq(md) {
+        padding: rm(40) rm(10);
+    }
 
     &__container {
         max-width: vw(117);
         margin: 0 auto;
+
+        @include mq(md) {
+            max-width: rm(600);
+        }
     }
 
     &__container--title {
@@ -518,6 +527,12 @@ background-position: center;
         font-weight: bold;
         margin: 0 auto;
         letter-spacing: 0.5vw;
+
+        @include mq(md) {
+            font-size: rm(45);
+            max-width: rm(146);
+            letter-spacing:rm(0.11);
+        }
     }
 
     &__container--text {
@@ -526,6 +541,13 @@ background-position: center;
         margin-bottom: vw(37);
         margin-top: vw(4);
         letter-spacing: 0.18vw;
+
+        @include mq(md) {
+            font-size: rm(20);
+            margin-bottom: rm(40);
+            margin-top: 0.65rem;
+            letter-spacing: 0.06rem;
+        }
     }
 
     .accordion {
@@ -538,28 +560,95 @@ background-position: center;
     }
 
     .accordion-title {
-        padding: vw(20) vw(16);
+        padding: vw(20) vw(16) vw(16) vw(16);
         max-width: vw(358);
         background-color: #fff;
         margin: 0 auto;
         text-align: left;
         cursor: pointer;
+        display: flex;
+        gap: 11px;
+        @include mq(md) {
+        padding: rm(24) rm(24) 0.9rem rm(24);
+        max-width: rm(600);
+        gap: rm(16);
     }
-    .accordion-item{
+}
+
+    .accordion-item {
         margin-bottom: vw(20);
+        @include mq(md) {
+            margin-bottom: 1.69rem;
+    }
     }
     /* アコーディオンのコンテンツ部分 */
     .accordion-content {
         display: none;
-        /* 初期状態は非表示 */
-        padding: vw(19) vw(17) vw(33) vw(16);
-        background-color: #fff;
-        max-width: vw(358);
-        margin: vw(-20) auto vw(20) auto;
     }
 
     /* 初期状態を表示するとき用のクラス */
     .accordion-content-active {
         display: block;
+        padding: vw(19) vw(17) 6.8vw vw(16);
+        background-color: #fff;
+        max-width: vw(358);
+        margin: vw(-20) auto vw(20) auto;
+        @include mq(md) {
+        padding: rm(24);
+        max-width: rm(600);
+        margin: rm(-20) auto 0 auto;
+    }
+    }
+    .accordion-container .accordion-title {
+        position: relative;
+    }
+
+    .accordion-container .accordion-title::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-top-color: #000;
+    }
+
+    .accordion-container .accordion-title.open::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        border: 8px solid transparent;
+        border-bottom-color: #000;
+    }
+
+    .accordion-title-text {
+        width: vw(271);
+        letter-spacing: -0.26vw;
+        line-height: 1.7em;
+        @include mq(md) {
+            width: rm(491);
+            text-align: left;
+            letter-spacing: -0.06rem;
+    }
+}
+    .accordion-content {
+        display: flex;
+        gap: 3.2vw;
+        @include mq(md) {
+            gap: 1.2rem;
+    }
+    }
+    .accordion-title-text-a {
+        width: vw(297);
+        @include mq(md) {
+            width: rm(518);
+    }
+    }
+    .accordion-container:last-child {
+        margin-bottom: 0.1vw;
+        @include mq(md) {
+            margin-bottom: -1rem;
+        }
     }
 }
