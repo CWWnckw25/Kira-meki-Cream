@@ -93,11 +93,11 @@ body {
     margin: 0 auto;
     max-width: 1000px;
     height: 146px;
-    padding: 0;
+    padding: 40px 3.2%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 4rem;
+    gap: 4.26vw;
   }
 }
 .price__container--item {
@@ -106,9 +106,10 @@ body {
 }
 @media screen and (min-width: 768px) {
   .price__container--item {
-    max-width: 208px;
+    width: 208px;
     height: 66px;
     margin: 0;
+    flex-shrink: 0;
   }
 }
 .price__container--item--title {
@@ -156,19 +157,15 @@ body {
 @media screen and (min-width: 768px) {
   .price__container--button {
     flex-direction: row;
-    gap: 2rem;
+    width: 75%;
+    gap: 2.13vw;
   }
 }
 .price__container a {
   text-decoration: none;
   color: #fff;
 }
-@media screen and (min-width: 768px) {
-  .price__container--button--item {
-    max-width: 76.9230769231vw;
-  }
-}
-.price__container--link {
+.price__container--button--item {
   width: 76.9230769231vw;
   height: 14.8717948718vw;
   background-color: #46C4DB;
@@ -180,11 +177,11 @@ body {
   margin-bottom: 5.1282051282vw;
 }
 @media screen and (min-width: 768px) {
-  .price__container--link {
-    width: 20vw;
+  .price__container--button--item {
+    width: 50%;
     height: 3.625rem;
     border-radius: 50px;
-    font-size: 1.2vw;
+    font-size: 1.125rem;
     margin-bottom: 0;
     white-space: nowrap;
   }
@@ -194,19 +191,20 @@ body {
 }
 
 .keep {
-  background-image: url(/../images/keep_sp.jpg);
+  background-image: url("/../images/keep_sp.jpg");
   max-width: 100%;
   height: 174.358974359vw;
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .keep {
-    background-image: url(/../images/keep_pc.jpg);
+    background-image: url("/../images/keep_pc.jpg");
     height: 36.6vw;
     -o-object-fit: cover;
        object-fit: cover;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
 }
 .keep__container {
@@ -216,10 +214,16 @@ body {
 }
 @media screen and (min-width: 768px) {
   .keep__container {
-    padding: 8.46vw 1.06vw;
-    width: 29.1875rem;
     text-align: left;
-    margin-right: 14.7%;
+    width: 55%;
+    padding: 127px 5% 127px 7%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .keep__container {
+    text-align: left;
+    width: 55%;
+    padding: 127px 5.3% 127px 10.2%;
   }
 }
 .keep__container--title {
@@ -231,9 +235,15 @@ body {
 }
 @media screen and (min-width: 768px) {
   .keep__container--title {
-    font-size: 2.53vw;
+    font-size: 33px;
     padding-top: 0;
     margin-bottom: 0.5625rem;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .keep__container--title {
+    font-size: 38px;
   }
 }
 .keep__container--skin {
@@ -244,8 +254,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .keep__container--skin {
-    font-size: 1.6vw;
+    font-size: 20px;
     margin-bottom: 1rem;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .keep__container--skin {
+    font-size: 24px;
   }
 }
 .keep__container--text {
@@ -257,9 +273,17 @@ body {
 }
 @media screen and (min-width: 768px) {
   .keep__container--text {
-    width: 26.8125rem;
-    font-size: 0.93vw;
+    width: 22rem;
+    font-size: 12px;
+    line-height: 2;
     letter-spacing: 0.005vw;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .keep__container--text {
+    font-size: 14px;
+    width: 26.8125rem;
+    line-height: 2.2;
   }
 }
 
@@ -386,6 +410,9 @@ body {
     right: -80px;
   }
 }
+.voice .slick-next:focus, .voice .slick-next:hover, .voice .slick-prev:focus, .voice .slick-prev:hover {
+  background-color: #00AFBF;
+}
 .voice .slick-next::before,
 .voice .slick-prev::before {
   font-family: "sans-serif";
@@ -481,7 +508,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .question {
-    padding: 2.5rem 0.625rem;
+    padding: 2.5rem 30%;
   }
 }
 .question__container {
@@ -490,7 +517,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .question__container {
-    max-width: 37.5rem;
+    max-width: 100%;
   }
 }
 .question__container--title {
@@ -529,11 +556,11 @@ body {
 .question .accordion li {
   list-style: none;
   text-decoration: none;
+  background-color: #fff;
 }
 .question .accordion-title {
   padding: 5.1282051282vw 4.1025641026vw 4.1025641026vw 4.1025641026vw;
   max-width: 91.7948717949vw;
-  background-color: #fff;
   margin: 0 auto;
   text-align: left;
   cursor: pointer;
@@ -543,7 +570,7 @@ body {
 @media screen and (min-width: 768px) {
   .question .accordion-title {
     padding: 1.5rem 1.5rem 0.9rem 1.5rem;
-    max-width: 37.5rem;
+    max-width: 100%;
     gap: 1rem;
   }
 }
@@ -561,36 +588,18 @@ body {
 .question .accordion-content-active {
   display: block;
   padding: 4.8717948718vw 4.358974359vw 6.8vw 4.1025641026vw;
-  background-color: #fff;
   max-width: 91.7948717949vw;
-  margin: -5.1282051282vw auto 5.1282051282vw auto;
 }
 @media screen and (min-width: 768px) {
   .question .accordion-content-active {
     padding: 1.5rem;
-    max-width: 37.5rem;
-    margin: -1.25rem auto 0 auto;
   }
 }
 .question .accordion-container .accordion-title {
   position: relative;
 }
-.question .accordion-container .accordion-title::after {
-  content: "";
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 0;
-  height: 0;
-  border: 8px solid transparent;
-  border-top-color: #000;
-}
-.question .accordion-container .accordion-title.open::after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  border: 8px solid transparent;
-  border-bottom-color: #000;
+.question .accordion-content--active .accordion-arrow-icon {
+  transform: rotate(45deg);
 }
 .question .accordion-title-text {
   width: 69.4871794872vw;
@@ -627,5 +636,13 @@ body {
 @media screen and (min-width: 768px) {
   .question .accordion-container:last-child {
     margin-bottom: -1rem;
+  }
+}
+.question .price-container.price-under {
+  margin-top: 12.8205128205vw;
+}
+@media screen and (min-width: 768px) {
+  .question .price-container.price-under {
+    margin-top: 48px;
   }
 }/*# sourceMappingURL=main.css.map */

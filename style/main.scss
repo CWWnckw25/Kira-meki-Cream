@@ -14,7 +14,7 @@
 $breakpoints: (
     "md": "screen and (min-width: 768px)",
     "lg": "screen and (min-width: 940px)",
-    "xl": "screen and (min-width: 1200px)",
+    "xl": "screen and (min-width: 1000px)",
     ) !default;
 
 @mixin mq($breakpoint: md) {
@@ -118,11 +118,11 @@ background-position: center;
             margin: 0 auto;
             max-width: 1000px;
             height: 146px;
-            padding: 0;
+            padding: 40px 3.2%;
             display: flex;
-            justify-content: center;
+            justify-content:space-between;
             align-items: center;
-            gap: rm(64);
+            gap: 4.26vw;
         }
     }
 
@@ -131,9 +131,10 @@ background-position: center;
         margin: 0 auto;
 
         @include mq(md) {
-            max-width: 208px;
+            width: 208px;
             height: 66px;
             margin: 0;
+            flex-shrink: 0;
         }
     }
 
@@ -182,7 +183,8 @@ background-position: center;
 
         @include mq(md) {
             flex-direction: row;
-            gap: rm(32);
+            width: 75%;
+            gap: 2.13vw;
         }
     }
 
@@ -191,13 +193,8 @@ background-position: center;
         color: #fff;
     }
 
-    @include mq(md) {
-        &__container--button--item {
-            max-width: vw(300);
-        }
-    }
 
-    &__container--link {
+    &__container--button--item {
         width: vw(300);
         height: vw(58);
         background-color: #46C4DB;
@@ -209,10 +206,10 @@ background-position: center;
         margin-bottom: vw(20);
 
         @include mq(md) {
-            width: 20vw;
+            width: 50%;
             height: rm(58);
             border-radius: 50px;
-            font-size: 1.2vw;
+            font-size: rm(18);
             margin-bottom: 0;
             white-space: nowrap;
         }
@@ -224,32 +221,35 @@ background-position: center;
 }
 
 .keep {
-    background-image: url(/../images/keep_sp.jpg);
+    background-image: url('/../images/keep_sp.jpg');
     max-width: 100%;
     height: vw(680);
     background-size: cover;
 
     @include mq(md) {
-        background-image: url(/../images/keep_pc.jpg);
+        background-image: url('/../images/keep_pc.jpg');
         height: 36.6vw;
         object-fit: cover;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
     }
 
     &__container {
         padding: 0 vw(16);
         text-align: center;
         color: #fff;
-
         @include mq(md) {
-            padding: 8.46vw 1.06vw;
-            width: rm(467);
             text-align: left;
-            margin-right: 14.7%;
+            width: 55%;
+            padding: 127px 5% 127px 7%;
+    }
+        @include mq(xl) {
+            text-align: left;
+            width: 55%;
+            padding: 127px 5.3% 127px 10.2%;
         }
     }
-
     &__container--title {
         font-size: vw(30);
         font-weight: bold;
@@ -258,21 +258,28 @@ background-position: center;
         margin-bottom: vw(8);
 
         @include mq(md) {
-            font-size: 2.53vw;
+            font-size: 33px;
             padding-top: 0;
             margin-bottom: rm(9);
+            white-space: nowrap;
         }
+        @include mq(xl) {
+            font-size: 38px;
     }
+}
 
     &__container--skin {
         font-size: vw(24);
         font-weight: 600;
         font-family: serif;
         margin-bottom: 3.6vw;
-
         @include mq(md) {
-            font-size: 1.6vw;
+            font-size: 20px;
             margin-bottom: rm(16);
+            white-space: nowrap;
+        }
+        @include mq(xl) {
+            font-size: 24px;
         }
     }
 
@@ -282,11 +289,16 @@ background-position: center;
         font-family: serif;
         line-height: rm(32);
         text-align: left;
-
         @include mq(md) {
-            width: rm(429);
-            font-size: 0.93vw;
+            width: 22rem;
+            font-size: 12px;
+            line-height: 2;
             letter-spacing: 0.005vw;
+        }
+        @include mq(xl) {
+            font-size: 14px;
+            width: rm(429);
+            line-height: 2.2;
         }
     }
 }
@@ -388,7 +400,6 @@ background-position: center;
         height: vw(32);
         border-radius: 50%;
         z-index: 100;
-        ;
 
         @include mq(md) {
             background-color: #00AFBF;
@@ -412,7 +423,9 @@ background-position: center;
             right: -80px;
         }
     }
-
+    .slick-next:focus,.slick-next:hover,.slick-prev:focus,.slick-prev:hover{
+        background-color: #00AFBF;
+    }
     .slick-next::before,
     .slick-prev::before {
         font-family: 'sans-serif';
@@ -508,7 +521,7 @@ background-position: center;
     text-align: center;
 
     @include mq(md) {
-        padding: rm(40) rm(10);
+        padding: rm(40) 30%;
     }
 
     &__container {
@@ -516,7 +529,7 @@ background-position: center;
         margin: 0 auto;
 
         @include mq(md) {
-            max-width: rm(600);
+            max-width: 100%;
         }
     }
 
@@ -557,12 +570,12 @@ background-position: center;
     .accordion li {
         list-style: none;
         text-decoration: none;
+        background-color: #fff;
     }
 
     .accordion-title {
         padding: vw(20) vw(16) vw(16) vw(16);
         max-width: vw(358);
-        background-color: #fff;
         margin: 0 auto;
         text-align: left;
         cursor: pointer;
@@ -570,7 +583,7 @@ background-position: center;
         gap: 11px;
         @include mq(md) {
         padding: rm(24) rm(24) 0.9rem rm(24);
-        max-width: rm(600);
+        max-width: 100%;
         gap: rm(16);
     }
 }
@@ -590,38 +603,17 @@ background-position: center;
     .accordion-content-active {
         display: block;
         padding: vw(19) vw(17) 6.8vw vw(16);
-        background-color: #fff;
         max-width: vw(358);
-        margin: vw(-20) auto vw(20) auto;
         @include mq(md) {
         padding: rm(24);
-        max-width: rm(600);
-        margin: rm(-20) auto 0 auto;
     }
     }
     .accordion-container .accordion-title {
         position: relative;
     }
-
-    .accordion-container .accordion-title::after {
-        content: "";
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        width: 0;
-        height: 0;
-        border: 8px solid transparent;
-        border-top-color: #000;
+    .accordion-content--active .accordion-arrow-icon{
+        transform: rotate(45deg);
     }
-
-    .accordion-container .accordion-title.open::after {
-        content: "";
-        position: absolute;
-        top: 15px;
-        border: 8px solid transparent;
-        border-bottom-color: #000;
-    }
-
     .accordion-title-text {
         width: vw(271);
         letter-spacing: -0.26vw;
@@ -651,4 +643,10 @@ background-position: center;
             margin-bottom: -1rem;
         }
     }
+    .price-container.price-under{
+        margin-top: vw(50);
+        @include mq(md) {
+            margin-top: 48px;
+    }
+}
 }
