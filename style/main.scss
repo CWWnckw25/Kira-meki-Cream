@@ -22,7 +22,9 @@ $breakpoints: (
         @content;
     }
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Marcellus",
         "EB Garamond",
@@ -242,12 +244,12 @@ background-position: center;
         @include mq(md) {
             text-align: left;
             width: 55%;
-            padding: 127px 5% 127px 7%;
+            padding: 0 5% 0 7%;
     }
         @include mq(xl) {
             text-align: left;
             width: 55%;
-            padding: 127px 5.3% 127px 10.2%;
+            padding: 0 5.3% 0 10.2%;
         }
     }
     &__container--title {
@@ -304,7 +306,7 @@ background-position: center;
 }
 
 .voice {
-    padding: vw(50) vw(16) vw(42) vw(16);
+    padding: vw(50) vw(55) vw(42) vw(55);
 
     @include mq(md) {
         padding: 80px 150px;
@@ -369,8 +371,6 @@ background-position: center;
     .slick-track {
         display: flex;
         justify-content: center;
-        gap: vw(16);
-
         @include mq(md) {
             gap: 0.7%;
         }
@@ -393,14 +393,14 @@ background-position: center;
         }
     }
     .prev-arrow{
-        left: 0px;
+        left: -40px;
         z-index: 1;
         @include mq(md) {
         left: -80px;
         } 
     }
     .next-arrow{
-        right: 0px;
+        right: -40px;
         @include mq(md) {
         right: -80px;
         }
@@ -570,6 +570,7 @@ background-position: center;
         cursor: pointer;
         display: flex;
         gap: 11px;
+        align-items: flex-start;
         @include mq(md) {
         padding: 0;
         max-width: 100%;
@@ -584,7 +585,7 @@ background-position: center;
     }
     }
     /* アコーディオンのコンテンツ部分 */
-    .accordion-content {
+    .accordion-content-wrapper {
         display: none;
     }
 
@@ -605,7 +606,9 @@ background-position: center;
     }
     .accordion-arrow-icon{
         transition: all 0.6s;
-        line-height: 3;
+        line-height: 1.5;
+        margin-top: 0.5vw;
+        margin-left: auto;
         @include mq(md) {
         transition: all 0.6s;
         line-height: 1;
@@ -666,6 +669,9 @@ background-position: center;
     justify-content: center;
     margin-left: 89%;
     margin-top: vw(25);
+    position: sticky;
+    bottom: 2rem;
+    right: 3rem;
     @include mq(md) {
         width: rm(40);
         height: rm(40);
@@ -695,7 +701,7 @@ background-position: center;
     padding: vw(24) vw(16); 
     @include mq(md) {
         height: rm(104);
-        padding: rm(42) 10%;
+        padding: rm(42) 5%;
 }
 &__container{
     margin: 0 auto;
@@ -705,6 +711,7 @@ background-position: center;
         display: flex;
         align-items: center;
         justify-content: space-between ;
+        margin: 0 auto;
         
     }
 }
@@ -714,6 +721,7 @@ background-position: center;
     @include mq(md) {
         font-size: rm(32);
         margin-bottom: 0;
+        max-width: rm(190);
     }
 }
 &__container--item a{
@@ -728,12 +736,14 @@ background-position: center;
     margin-bottom: vw(25);
     @include mq(md) {
         margin-bottom: 0;
+        max-width: rm(344);
     }
 }
 &__container--copy{
     font-size: vw(12);
     @include mq(md) {
         font-size: rm(12);
+        max-width: rm(239);
     }
 }
 }
