@@ -28,6 +28,12 @@ $('.accordion-title').on('click', function(e) {
     });
 
     
-//ふわっと表示
-
+//スクロールするとフェードイン
+$(window).scroll(function() {
+    if ($(this).scrollTop() > $(window).height() / 10) {
+        $('.price-arrow-up').fadeIn();
+    } else {
+        $('.price-arrow-up').fadeOut();
+    }
+});
 

@@ -33,7 +33,7 @@ body {
 }
 
 .header {
-    background-image: url('/../images/mainvisual_sp.jpg'
+    background-image: url('/images/mainvisual_sp.jpg'
     );
 max-width: 100%;
 height: 115.3vw;
@@ -42,7 +42,7 @@ margin: 0 auto;
 background-position: center;
 
 @include mq(md) {
-    background-image: url('/../images/mainvisual_pc.jpg');
+    background-image: url('/images/mainvisual_pc.jpg');
     height: 720px;
 }
 
@@ -53,12 +53,11 @@ background-position: center;
     justify-content: center;
     padding-top: vw(24);
     font-weight: normal;
-    letter-spacing: 1.2vw;
+    letter-spacing: 0.199em;
 
     @include mq(md) {
         font-size: rm(28);
         padding-top: 32px;
-        letter-spacing: 0.374vw;
     }
 }
 
@@ -68,7 +67,7 @@ background-position: center;
 
     @include mq(md) {
         width: 364px;
-        margin-left: 14.86vw;
+        margin-left: clamp(4.75rem, -4.955rem + 20.22vw, 14rem);
         transform: translateY(119%);
     }
 }
@@ -76,24 +75,22 @@ background-position: center;
 &__catch--cream {
     font-size: vw(41);
     font-weight: normal;
-    letter-spacing: 3.2vw;
+    letter-spacing: 0.3em;
     margin-bottom: vw(8);
 
     @include mq(md) {
         font-size: rm(50);
-        letter-spacing: 15px;
         margin-bottom: 10px;
-        line-height: 4.01rem;
+        line-height: 1.278;
     }
 }
 
 &__catch--under {
     font-size: vw(20);
-    letter-spacing: 1.5vw;
+    letter-spacing: 0.3em;
 
     @include mq(md) {
         font-size: rm(25);
-        letter-spacing: 0.5vw;
         white-space: nowrap;
     }
 }
@@ -144,16 +141,16 @@ background-position: center;
         font-size: vw(18);
         font-weight: 600;
         padding-top: vw(20);
-        letter-spacing: 0.44vw;
+        letter-spacing: 0.1em;
         margin-bottom: vw(5);
 
         @include mq(md) {
             font-size: rm(23);
             padding-top: 0;
-            letter-spacing: 0.24vw;
             margin-bottom: 0;
             white-space: nowrap;
             margin-bottom: 10px;
+            letter-spacing: 0.149em;
         }
     }
 
@@ -164,13 +161,13 @@ background-position: center;
         justify-content: center;
         align-items: center;
         gap: vw(2);
-        letter-spacing: 0.34vw;
+        letter-spacing: 0.1em;
         margin-bottom: vw(20);
 
         @include mq(md) {
             font-size: rm(16);
             gap: rm(2);
-            letter-spacing: 2px;
+            letter-spacing: 0.13em;
             margin-bottom: 0;
             justify-content: flex-start;
         }
@@ -223,13 +220,13 @@ background-position: center;
 }
 
 .keep {
-    background-image: url('/../images/keep_sp.jpg');
+    background-image: url('/images/keep_sp.jpg');
     max-width: 100%;
     height: vw(680);
     background-size: cover;
 
     @include mq(md) {
-        background-image: url('/../images/keep_pc.jpg');
+        background-image: url('/images/keep_pc.jpg');
         height: 36.6vw;
         object-fit: cover;
         display: flex;
@@ -289,13 +286,13 @@ background-position: center;
         width: vw(358);
         font-size: vw(14);
         font-family: serif;
-        line-height: rm(32);
+        line-height: 2.27;
         text-align: left;
         @include mq(md) {
             width: 22rem;
             font-size: 12px;
             line-height: 2;
-            letter-spacing: 0.005vw;
+            letter-spacing: 0.009em;
         }
         @include mq(xl) {
             font-size: 14px;
@@ -337,12 +334,11 @@ background-position: center;
         font-family: "EB Garamond";
         font-weight: bold;
         font-size: vw(30);
-        letter-spacing: 0.4vw;
+        letter-spacing: 0.06em;
 
         @include mq(md) {
             margin-bottom: rm(8);
             font-size: rm(45);
-            letter-spacing: 0.13rem;
         }
     }
 
@@ -351,12 +347,11 @@ background-position: center;
         font-size: vw(16);
         font-weight: 600;
         margin-bottom: vw(36);
-        letter-spacing: 0.19vw;
+        letter-spacing: 0.05em;
 
         @include mq(md) {
             font-size: rm(20);
             margin-bottom: rm(40);
-            letter-spacing: 0.06vw;
         }
     }
 
@@ -488,12 +483,12 @@ background-position: center;
         text-align: left;
         width: vw(250);
         margin: 0 auto;
-        line-height: 1.72rem;
+        line-height: 2;
 
         @include mq(md) {
             font-size: 1.06vw;
             width: 17.8vw;
-            line-height: 1.86vw;
+            line-height: 1.8;
         }
     }
 }
@@ -523,12 +518,12 @@ background-position: center;
         font-family: "EB Garamond";
         font-weight: bold;
         margin: 0 auto;
-        letter-spacing: 0.5vw;
+        letter-spacing: 0.07em;
 
         @include mq(md) {
             font-size: rm(45);
             max-width: rm(146);
-            letter-spacing:rm(0.11);
+            letter-spacing: 0.05em;
         }
     }
 
@@ -537,13 +532,12 @@ background-position: center;
         font-weight: 600;
         margin-bottom: vw(37);
         margin-top: vw(4);
-        letter-spacing: 0.18vw;
+        letter-spacing: 0.04em;
 
         @include mq(md) {
             font-size: rm(20);
             margin-bottom: rm(40);
             margin-top: 0.65rem;
-            letter-spacing: 0.06rem;
         }
     }
 
@@ -616,20 +610,20 @@ background-position: center;
 }
     .accordion-title-text {
         width: vw(271);
-        letter-spacing: -0.26vw;
+        letter-spacing: -0.06em;
         line-height: 1.74;
         @include mq(md) {
             width: rm(491);
             text-align: left;
-            letter-spacing: -0.06rem;
-            line-height: 1.7em;
+            letter-spacing: -0.06em;
+            line-height: 1.7;
     }
 }
     .accordion-content {
         padding-top: vw(14);
         display: flex;
-        gap: 3.2vw;
         padding-bottom: 10px;
+        gap: 3vw;
         @include mq(md) {
             gap: 1.2rem;
             padding-top: rm(19.8);
@@ -637,8 +631,8 @@ background-position: center;
     }
     }
     .accordion-title-text-a {
-        
-        width: vw(297);
+        letter-spacing: -0.06em;
+        width: vw(300);
         @include mq(md) {
             width: rm(518);
     }
@@ -648,6 +642,12 @@ background-position: center;
         @include mq(md) {
             margin-bottom: -1.5rem;
         }
+    }
+}
+.price-under{
+    @include mq(md) {
+        padding-bottom: 1px;
+        height: 193px;
     }
 }
 .price-container-under{
@@ -661,13 +661,13 @@ background-position: center;
 .price-arrow-up{
     width: vw(40);
     height: vw(40);
-    padding: 0 vw(12);
+    padding: 1.7vw vw(12) 0 vw(12);
     background-color:#0071CE ;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 89%;
+    margin-left: 85.3%;
     margin-top: vw(25);
     position: sticky;
     bottom: 2rem;
@@ -675,8 +675,8 @@ background-position: center;
     @include mq(md) {
         width: rm(40);
         height: rm(40);
-        padding: 0 rm(12);
-        margin-left: 87.9%;
+        padding: 0.3rem rm(12) 0 rm(12);
+        margin-left: 87.3%;
         margin-top: rm(8);
 
 }
@@ -698,10 +698,10 @@ background-position: center;
     background-color: #0071CE;
     color: #fff;
     text-align: center;
-    padding: vw(24) vw(16); 
+    padding: vw(24.6) vw(16);
     @include mq(md) {
         height: rm(104);
-        padding: rm(42) 5%;
+        padding: rm(32) 1%;
 }
 &__container{
     margin: 0 auto;
@@ -718,10 +718,13 @@ background-position: center;
 &__container--logo{
     font-size: vw(28);
     margin-bottom: vw(24);
+    font-weight: normal;
+    letter-spacing: 0.199em;
     @include mq(md) {
-        font-size: rm(32);
+        font-size: clamp(1.688rem, 1.36rem + 0.68vw, 2rem);
         margin-bottom: 0;
-        max-width: rm(190);
+        width: rm(190);
+        white-space: nowrap;
     }
 }
 &__container--item a{
@@ -729,21 +732,29 @@ background-position: center;
     color: #fff;
     font-size: vw(12);
     @include mq(md) {
-        font-size: rm(14);
+        font-size: clamp(0.75rem, 0.619rem + 0.27vw, 0.875rem);
 }
 }
 &__container--item{
     margin-bottom: vw(25);
+    display: flex;
+    gap: vw(30);
     @include mq(md) {
         margin-bottom: 0;
-        max-width: rm(344);
+        width: rm(343);
+        gap: 9.3%;
+        margin-left: 4.5%;
     }
 }
 &__container--copy{
     font-size: vw(12);
+    letter-spacing: -0.005em;
+    font-family: "Noto Sans JP", sans-serif;
     @include mq(md) {
         font-size: rm(12);
-        max-width: rm(239);
+        width: rm(242);
+        letter-spacing: 0.032em;
+        white-space: nowrap;
     }
 }
 }
