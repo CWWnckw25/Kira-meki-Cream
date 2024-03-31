@@ -8,8 +8,8 @@
         infinite: true, //スライドのループ
         slidesToShow: 3,
         slidesToScroll: 3,
-        prevArrow: '<img src="/../images/arrow-left-circle-fill.png" class="slide-arrow prev-arrow">',
-        nextArrow: '<img src="/../images/arrow-right-circle-fill.png" class="slide-arrow next-arrow">',
+        prevArrow: '<img src="/assets/images/arrow-left-circle-fill.png" class="slide-arrow prev-arrow" alt="">',
+        nextArrow: '<img src="/assets/images/arrow-right-circle-fill.png" class="slide-arrow next-arrow"alt="">',
 
         responsive: [{
             breakpoint: 768,
