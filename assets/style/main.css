@@ -165,6 +165,11 @@ body {
 .price__container a {
   text-decoration: none;
   color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .price__container--button--item {
   width: 76.9230769231vw;
