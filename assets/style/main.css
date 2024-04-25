@@ -543,12 +543,10 @@ body {
   list-style: none;
   text-decoration: none;
   background-color: #fff;
-  padding: 5.1282051282vw 4.1025641026vw 4.1025641026vw 4.1025641026vw;
 }
 @media screen and (min-width: 768px) {
   .question .accordion li {
-    padding: 1.5rem 1.5rem 1.4rem 1.5rem;
-    margin: 0 auto 1.35rem auto;
+    margin: 0 auto 1.5rem auto;
     max-width: 600px;
   }
 }
@@ -560,16 +558,19 @@ body {
   display: flex;
   gap: 11px;
   align-items: flex-start;
+  padding: 5.1282051282vw 4.1025641026vw 3.3333333333vw 4.1025641026vw;
 }
 @media screen and (min-width: 768px) {
   .question .accordion-title {
     padding: 0;
     max-width: 100%;
     gap: 1.1rem;
+    padding: 1.5rem;
+    padding-bottom: 1.1875rem;
   }
 }
 .question .accordion-item {
-  margin-bottom: 4.6153846154vw;
+  margin-bottom: 5.1282051282vw;
 }
 @media screen and (min-width: 768px) {
   .question .accordion-item {
@@ -581,7 +582,6 @@ body {
 }
 .question .accordion-content-active {
   display: block;
-  padding: 4.8717948718vw 4.358974359vw 6.8vw 4.1025641026vw;
   max-width: 91.7948717949vw;
 }
 @media screen and (min-width: 768px) {
@@ -598,7 +598,7 @@ body {
 .question .accordion-arrow-icon {
   transition: all 0.6s;
   line-height: 1.5;
-  margin-top: 0.5vw;
+  margin-top: 0.3vw;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
@@ -621,16 +621,15 @@ body {
   }
 }
 .question .accordion-content {
-  padding-top: 3.5897435897vw;
   display: flex;
-  padding-bottom: 10px;
   gap: 3vw;
+  padding: 0vw 4.1025641026vw 7.1794871795vw 4.1025641026vw;
 }
 @media screen and (min-width: 768px) {
   .question .accordion-content {
     gap: 1.2rem;
-    padding-top: 1.2375rem;
-    padding-bottom: 0;
+    padding: 1.5rem;
+    padding-top: 0;
   }
 }
 .question .accordion-title-text-a {
@@ -770,6 +769,7 @@ body {
     width: 21.4375rem;
     gap: 9.3%;
     margin-left: 4.5%;
+    white-space: nowrap;
   }
 }
 .footer__container--copy {

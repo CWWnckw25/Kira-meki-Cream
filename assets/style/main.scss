@@ -566,11 +566,9 @@ background-position: center;
         list-style: none;
         text-decoration: none;
         background-color: #fff;
-        padding: vw(20) vw(16) vw(16) vw(16);
 
         @include mq(md) {
-            padding: rm(24) rm(24) 1.4rem rm(24);
-            margin: 0 auto 1.35rem auto;
+            margin: 0 auto 1.5rem auto;
             max-width: 600px;
         }
     }
@@ -583,16 +581,20 @@ background-position: center;
         display: flex;
         gap: 11px;
         align-items: flex-start;
+        padding: vw(20) vw(16) vw(13) vw(16);
 
         @include mq(md) {
             padding: 0;
             max-width: 100%;
             gap: 1.1rem;
+            padding: rm(24);
+            padding-bottom: rm(19);
+
         }
     }
 
     .accordion-item {
-        margin-bottom: vw(18);
+        margin-bottom: vw(20);
 
         @include mq(md) {
             margin-bottom: 1.35rem;
@@ -607,7 +609,6 @@ background-position: center;
     /* 初期状態を表示するとき用のクラス */
     .accordion-content-active {
         display: block;
-        padding: vw(19) vw(17) 6.8vw vw(16);
         max-width: vw(358);
 
         @include mq(md) {
@@ -626,7 +627,7 @@ background-position: center;
     .accordion-arrow-icon {
         transition: all 0.6s;
         line-height: 1.5;
-        margin-top: 0.5vw;
+        margin-top: 0.3vw;
         margin-left: auto;
 
         @include mq(md) {
@@ -649,15 +650,14 @@ background-position: center;
     }
 
     .accordion-content {
-        padding-top: vw(14);
         display: flex;
-        padding-bottom: 10px;
         gap: 3vw;
+        padding: vw(0) vw(16) vw(28) vw(16);
 
         @include mq(md) {
             gap: 1.2rem;
-            padding-top: rm(19.8);
-            padding-bottom: 0;
+            padding: rm(24);
+            padding-top: 0;
         }
     }
 
@@ -728,7 +728,6 @@ background-position: center;
     @include mq(md) {
         font-size: rm(20);
         font-weight: bold;
-
     }
 }
 
@@ -796,6 +795,7 @@ background-position: center;
             width: rm(343);
             gap: 9.3%;
             margin-left: 4.5%;
+            white-space: nowrap;
         }
     }
 
