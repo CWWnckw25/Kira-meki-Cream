@@ -21,37 +21,41 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__logo">Kira-meki</h1>
+        <div class="header__logo"><img src="/assets/images/logo.png" alt="ロゴ"class="header__logo-img"></div>
         <div class="header__catch">
-            <h2 class="header__catch--cream">Kirameki Cream</h2>
+            <h1 class="header__catch--cream">Kirameki Cream</h1>
             <p class="header__catch--under">肌のうるおい、煌めく。</p>
         </div>
     </header>
     <section class="price">
         <div class="price__container">
             <div class="price__container--item">
-                <h2 class="price__container--item--title">キラメキクリーム</h2>
+                <p class="price__container--item--title">キラメキクリーム</p>
                 <p class="price__container--item--tax"><span class="price__container--item--blank">税込</span><span class="price__container--item--blank"></span>4,000円</p>
             </div>
             <div class="price__container--button">
                 <div class="price__container--button--item"><a href="#" class="price__container--link">オンラインショップへ</a></div>
-                <div class="price__container--button--item price__container--link--green"><a href="/cart/" class="price__container--link">購入する</a></div>
+                <div class="price__container--button--item price__container--link--green">
+                    <form action="/cart/" method="POST"><button type="submit" class="price__container--link">購入する</button></form>
+                </div>
             </div>
         </div>
     </section>
     <section class="keep">
-        <div class="keep__container">
-            <h2 class="keep__container--title">Keep Your Skin Beautiful.</h2>
-            <h3 class="keep__container--skin">お肌を美しく保つ</h3>
+        <main class="keep__container">
+            <h2 class="keep__container--box">
+                <p class="keep__container--title">Keep Your Skin Beautiful.</p>
+                <p class="keep__container--skin">お肌を美しく保つ</p>
+            </h2>
             <p class="keep__container--text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-        </div>
+        </main>
     </section>
     <section class="voice">
         <div class="voice__container">
-            <div class="voice__container--item">
-                <h2 class="voice__container--title">Voices</h2>
-                <h3 class="voice__container--text">お客様の声</h3>
-            </div>
+            <h2 class="voice__container--item">
+                <p class="voice__container--title">Voices</p>
+                <p class="voice__container--text">お客様の声</p>
+            </h2>
             <div class="voice__container--slider">
                 <ul class="voice__container--slider--content">
                     <li class="voice__container--slider--item">
@@ -164,24 +168,26 @@
     <section class="price price-under">
         <div class="price__container price-container-under">
             <div class="price__container--item">
-                <h2 class="price__container--item--title">キラメキクリーム</h2>
+                <p class="price__container--item--title">キラメキクリーム</p>
                 <p class="price__container--item--tax"><span class="price__container--item--blank">税込</span><span class="price__container--item--blank"></span>4,000円</p>
             </div>
             <div class="price__container--button">
                 <div class="price__container--button--item"><a href="#" class="price__container--link">オンラインショップへ</a></div>
-                <div class="price__container--button--item price__container--link--green"><a href="/cart/" class="price__container--link">購入する</a></div>
+                <div class="price__container--button--item price__container--link--green">
+                    <form action="/cart/" method="POST"><button type="submit" class="price__container--link">購入する</button></form>
+                </div>
             </div>
         </div>
     </section>
     <a href="#" class="price-arrow-up"><i class="bi bi-arrow-up arrow-up-icon"></i></a>
     <footer class="footer">
         <div class="footer__container">
-            <h2 class="footer__container--logo">Kira-meki</h2>
-            <div class="footer__container--item">
+            <p class="footer__container--logo">Kira-meki</p>
+            <nav class="footer__container--item">
                 <a href="/company/" class="footer__container--link">会社概要</a>
                 <a href="/privacy-policy/" class="footer__container--link">個人情報保護ポリシー</a>
                 <a href="/contact/" class="footer__container--link">お問い合わせ</a>
-            </div>
+            </nav>
             <p class="footer__container--copy">&copy; 2023 Kira-meki Inc. All rights reserved.</p>
         </div>
         
