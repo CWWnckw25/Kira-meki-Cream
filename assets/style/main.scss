@@ -47,7 +47,8 @@ background-position: center;
     background-image: url('/assets/images/mainvisual_pc.jpg');
     height: 720px;
 }
-&__logo{
+
+&__logo {
     padding-top: vw(22);
     text-align: center;
 
@@ -55,6 +56,7 @@ background-position: center;
         padding-top: 30px;
     }
 }
+
 &__logo-img {
     width: vw(143);
     height: vw(30);
@@ -192,7 +194,8 @@ background-position: center;
         }
     }
 
-    &__container a ,button {
+    &__container a,
+    button {
         text-decoration: none;
         color: #fff;
         width: 100%;
@@ -201,10 +204,12 @@ background-position: center;
         justify-content: center;
         align-items: center;
     }
-    form{
+
+    form {
         width: 100%;
         height: 100%;
     }
+
     &__container--button--item {
         width: vw(300);
         height: vw(58);
@@ -263,11 +268,13 @@ background-position: center;
             padding: 0.3% 5.3% 0 10.2%;
         }
     }
-    &__container--box{
+
+    &__container--box {
         @include mq(md) {
             line-height: 1.42;
         }
     }
+
     &__container--title {
         font-size: vw(30);
         font-weight: bold;
@@ -391,7 +398,7 @@ background-position: center;
     .slick-track {
         display: flex;
         justify-content: center;
-        gap:vw(3);
+        gap: vw(3);
 
         @include mq(md) {
             gap: 0.7%;
@@ -746,6 +753,7 @@ background-position: center;
         font-weight: bold;
     }
 }
+
 .footer {
     height: vw(165);
     background-color: #0071CE;
