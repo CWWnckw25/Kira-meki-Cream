@@ -70,12 +70,13 @@ background-position: center;
 
 &__catch {
     margin-left: vw(23);
-    transform: translateY(261%);
+    margin-top: 93%;
+    display: block;
 
     @include mq(md) {
         width: 364px;
         margin-left: clamp(4.75rem, -4.955rem + 20.22vw, 14rem);
-        margin-top: -246px;
+        margin-top: rm(204);
     }
 }
 
@@ -83,12 +84,12 @@ background-position: center;
     font-size: vw(41);
     font-weight: normal;
     letter-spacing: 0.3em;
-    margin-bottom: vw(8);
+    display: block;
 
     @include mq(md) {
         font-size: rm(50);
         margin-bottom: 10px;
-        line-height: 1.267;
+        line-height: 1.29;
     }
 }
 
@@ -156,8 +157,9 @@ background-position: center;
             padding-top: 0;
             margin-bottom: 0;
             white-space: nowrap;
-            margin-bottom: 10px;
+            margin-bottom: rm(6);
             letter-spacing: 0.149em;
+            margin-top: rm(1.7);
         }
     }
 
@@ -281,6 +283,7 @@ background-position: center;
         font-family: "EB Garamond";
         padding-top: vw(48);
         margin-bottom: vw(8);
+        display: block;
 
         @include mq(md) {
             font-size: 33px;
@@ -299,6 +302,7 @@ background-position: center;
         font-weight: 600;
         font-family: serif;
         margin-bottom: 3.6vw;
+        display: block;
 
         @include mq(md) {
             font-size: 20px;
@@ -367,6 +371,7 @@ background-position: center;
         font-weight: bold;
         font-size: vw(30);
         letter-spacing: 0.06em;
+        display: block;
 
         @include mq(md) {
             margin-bottom: rm(8);
@@ -380,6 +385,7 @@ background-position: center;
         font-weight: 600;
         margin-bottom: vw(36);
         letter-spacing: 0.05em;
+        display: block;
 
         @include mq(md) {
             font-size: rm(20);
@@ -398,7 +404,7 @@ background-position: center;
     .slick-track {
         display: flex;
         justify-content: center;
-        gap: vw(3);
+        gap: 0.05%;
 
         @include mq(md) {
             gap: 0.7%;
@@ -540,7 +546,7 @@ background-position: center;
     text-align: center;
 
     @include mq(md) {
-        padding: rm(40) 10%;
+        padding: rm(40) 10% rm(16) 10%;
     }
 
     &__container {
@@ -559,6 +565,7 @@ background-position: center;
         font-weight: bold;
         margin: 0 auto;
         letter-spacing: 0.07em;
+        display: block;
 
         @include mq(md) {
             font-size: rm(45);
@@ -573,6 +580,7 @@ background-position: center;
         margin-bottom: vw(37);
         margin-top: vw(4);
         letter-spacing: 0.04em;
+        display: block;
 
         @include mq(md) {
             font-size: rm(20);
@@ -602,7 +610,7 @@ background-position: center;
         text-align: left;
         cursor: pointer;
         display: flex;
-        gap: 11px;
+        gap: 3vw;
         align-items: flex-start;
         padding: vw(20) vw(16) vw(13) vw(16);
 
@@ -663,6 +671,7 @@ background-position: center;
         width: vw(271);
         letter-spacing: -0.06em;
         line-height: 1.74;
+        text-align: left;
 
         @include mq(md) {
             width: rm(491);
@@ -695,10 +704,6 @@ background-position: center;
 
     .accordion-container:last-child {
         margin-bottom: 0.1vw;
-
-        @include mq(md) {
-            margin-bottom: -1.5rem;
-        }
     }
 }
 
@@ -781,16 +786,23 @@ background-position: center;
     }
 
     &__container--logo {
-        font-size: vw(28);
-        margin-bottom: vw(24);
-        font-weight: normal;
-        letter-spacing: 0.199em;
+        margin-bottom: vw(21);
+        text-align: center;
 
         @include mq(md) {
-            font-size: clamp(1.688rem, 1.36rem + 0.68vw, 2rem);
             margin-bottom: 0;
-            width: rm(190);
             white-space: nowrap;
+        }
+    }
+
+    &__logo {
+        width: vw(166);
+        height: vw(35);
+
+        @include mq(md) {
+            width: rm(190);
+            height: rm(40);
+            margin-left: rm(3);
         }
     }
 
@@ -813,7 +825,7 @@ background-position: center;
             margin-bottom: 0;
             width: rm(343);
             gap: 9.3%;
-            margin-left: 4.5%;
+            margin-left: 4.3%;
             white-space: nowrap;
         }
     }

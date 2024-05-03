@@ -28,6 +28,7 @@ $('.accordion-title').on('click', function (e) {
 
 
 //スクロールするとフェードイン
+$('.price-arrow-up').hide();
 $(window).scroll(function () {
     if ($(this).scrollTop() > $(window).height() / 10) {
         $('.price-arrow-up').fadeIn();
