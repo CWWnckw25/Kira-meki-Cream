@@ -261,13 +261,13 @@ background-position: center;
         @include mq(md) {
             text-align: left;
             width: 55%;
-            padding: 0.3% 5% 0 7%;
+            padding: 0.5% 5% 0 7%;
         }
 
         @include mq(xl) {
             text-align: left;
             width: 55%;
-            padding: 0.3% 5.3% 0 10.2%;
+            padding: 0.5% 5.3% 0 10.2%;
         }
     }
 
@@ -376,6 +376,7 @@ background-position: center;
         @include mq(md) {
             margin-bottom: rm(8);
             font-size: rm(45);
+            margin-left: rm(3);
         }
     }
 
@@ -390,6 +391,7 @@ background-position: center;
         @include mq(md) {
             font-size: rm(20);
             margin-bottom: rm(40);
+            margin-left: rm(4);
         }
     }
 
@@ -487,7 +489,6 @@ background-position: center;
         color: #00AFBF;
         font-size: 10px;
     }
-
     &__container--slider--item {
         max-width: vw(280);
         height: vw(344);
@@ -716,7 +717,7 @@ background-position: center;
 
 .price-container-under {
     margin-top: vw(50);
-    margin-bottom: -4vw;
+    margin-bottom: 0;
 
     @include mq(md) {
         margin-top: 0;
@@ -734,7 +735,7 @@ background-position: center;
     align-items: center;
     justify-content: center;
     margin-left: 85.3%;
-    margin-top: vw(25);
+    margin-top: vw(11);
     position: sticky;
     bottom: 2rem;
     right: 3rem;
